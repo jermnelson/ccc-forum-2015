@@ -17,30 +17,76 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="container">
+  <body >
+    
     {% include 'snippets/navbar.html' %}
-    {#<img src="{{ url_for('static', filename='images/sound-wave.jpg') }}">#}
+    <div class="container">
     <div class="row" style="margin-top: 50px">
-      <section class="col-md-8 jumbotron">
+      <div class="col-md-8">
+      <section  class="jumbotron">
       <h1>Now What?</h1> 
       <p class="lead">
-       A Library Linked-Data <strong>How-to</strong> for your digital audio objects.<br>
+       A Library Linked-Data <strong>How-to</strong> for your digital audio objects.
+      </p>
+      <img src="{{ url_for('static', filename='images/sound-wave.jpg') }}" class="img-thumbnail">
+      <p class="lead">
+
                          by Jeremy Nelson,
                          Metadata and Systems Librarian<br>
                          Colorado College</p>
       </p>
       </section>
-      <article class="col-md-4 well well-sm">
-       <h3>Presentation 
-      </article>
+      <article class="panel panel-default">
+        <div class="panel-body">
+          <p>The Library of Congress MARC21 replacement called <a href="http://bibframe.org/">BIBFRAME</a>
+          is a linked data vocabulary along with other ontologies like
+          <a href="http://schema.org/">Schema.org</a>. This presentation will demonstrate a few 
+          projects that use digital audio objects using an open-source project called the semantic server, 
+          created and actively developed by Jeremy Nelson, for a pilot BIBFRAME catalog called 
+          <a href="http://bibcat.org/">Bibcat</a> being developed under contract with the Library and 
+           Congress and for Colorado College's Music Library Reserves. Finally, you'll receive more 
+          information about using these technologies for your institution. 
+          </p>
+        </div>
+       </article>
+      </div>
+      <section class="col-md-3">
+       <article class="panel panel-default">
+        <div class="panel-body">
+          <h3><i class="glyphicon glyphicon-headphones"></i> Presentation</h3>
+          <p>
+           Now that you have your digital audio files, either born-digital or digitalized 
+           from analog sources, is just the first step to providing long-term access and 
+           preservation of your valuable digital asset. The popular open-source digital 
+           repository platform <a href="fedora-commons.org">Fedora Commons</a>, used extensively 
+           by such institutions as <a href="http://searchworks.stanford.edu/">Stanford</a> and 
+           <a href="http://www.fedora-commons.org/node/101">Columbia Universities</a> and the 
+           <a href="http://oris.si.edu/sidora-functional-overview">Smithsonian</a>, recently 
+           released a new version that besides providing for the preservation of your audio 
+           digital object now offers a much more flexible and richer method of describing your 
+           object for long-term access by implementing a technology called linked data.
+          </p>
+        </article>
+       </div>
+      </section>
     </div>
+    <hr>
+    {% include 'slides/fedora-commons.html' %}
+    <hr>
+    {% include 'slides/semantic-server.html' %}
     <hr>
     {% include 'slides/lld-intro.html' %}
     <hr>
     {% include 'slides/bf-audio.html' %}
     <hr>
     {% include 'slides/schema-org-audio.html' %}
-    
+    <hr>
+    {% include 'slides/music-library-reserves.html' %} 
+    <hr>
+    {% include 'slides/bibcat.html' %} 
+    <br>
+    </div>
+    {% include 'snippets/footer.html' %}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,4 +1,5 @@
 __author__ = "Jeremy Nelson"
+__license__ = "GPLv3"
 
 from flask import Flask, render_template
 
