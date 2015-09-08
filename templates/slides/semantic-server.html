@@ -1,6 +1,7 @@
 <div class="container" id="semantic-server">
    <div class="row">
-       <div class="col-lg-8 jumbotron">
+       <section class="col-md-8">
+        <div class="jumbotron">
 	   <h1>Semantic Server</h1>
            <p class="lead">
      The Semantic Server is an open-source REST API wrapper that for managing RDF entities 
@@ -10,9 +11,42 @@
      Blazegraph. 
            </p>
        </div>
+      </section>
+      <section class="col-md-3">
+        <div class="panel panel-default">
+          <section class="panel-heading">
+           <h3>Fedora 4</h3>
+          </section>
+          <div class="panel-body">
+           In the semantic server, Fedora 4 is run as a webapp under
+           <a href="http://apache.tomcat.org">Tomcat</a> 
+          </div>
+        </div>
+        <div class="panel panel-info">
+          <section class="panel-heading">
+            <h3>Blazegraph</h3>
+          </section>
+          <div class="panel-body">
+
+          </div>
+        </div>
+        <div class="panel panel-warning">
+          <section class="panel-heading">
+           <h2>Semantic Server API</h2>
+          </section>
+          <div class="panel-body">
+
+          </div>
+        </div>
+      </section> 
    </div>
    <div class="row">
-    <article class="col-md-6">
-    </article>
+    <section class="col-md-8 col-md-offset-2"> 
+     <article class="well">
+      <img src="{{ url_for('static', filename='images/docker.png') }}" class="pull-right">
+      <h2>Quick &amp; Flexible Hosting with Docker</h2>
+      <img src="{{ url_for('static', filename='images/semantic-server-docker.svg') }}">
+     </article>
+    </section>
    </div>
 </div>
