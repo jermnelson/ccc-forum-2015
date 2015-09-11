@@ -6,25 +6,55 @@
       <p class="lead">
        <a href="http://www.w3.org/2005/Incubator/lld/XGR-lld-20111025/">Library Linked Data</a> is 
          part of the larger <a href="http://www.w3.org/standards/semanticweb/">Semantic Web</a>, 
-         an international effort to bring machine-readable data to the web.
+         an international effort to bring machine-readable data to the web. Library Linked Data is 
+         based on a RDF (Resource Description Framework) graphs made up a series of statements,
+         called triples, that take the form <strong>subject</strong> - <strong>predicate</strong>
+         - <strong>object</strong>
      </p>
 
      </section>
     </div>
  </div>
- <img src="{{ url_for('static', filename='images/graph_usairways_bundled.jpg') }}">
- <a href="http://blog.visualmotive.com/2009/graph-visualization-edge-bundling/">src</a>
  <div class="row">
-   <section class="col-md-6">
-<a href="#">https://digitalcc.coloradocollege.edu/islandora/object/coccc%3A2478</a>
+  <section class="col-md-9">
+   <img src="{{ url_for('static', filename='images/graph_usairways_bundled.jpg') }}">
+  </section>
+  <section class="col-md-3">
+     <h3 class="pull-right">What is a graph?</h3>
+     <p class="lead pull-right">
+      "...graph is a collection of nodes and the edges between them. 
+       Graphs are useful abstractions for describing transit networks, computer networks, 
+       and relationships among people (such as in a social network)" Chris Mueller
+      (<a href="http://blog.visualmotive.com/2009/graph-visualization-edge-bundling/">source</a>)
+     </p>
+  </section>
+ </div>
+ <br>
+ <div class="row">
+   <section class="col-md-4">
+     <article class="panel panel-success">
+       <div class="panel-heading">
+        <h3 class="panel-title">Freddie Blevins Oral History</h3>
+       </div>
+       <div class="panel-body">
+        To describe the Freddie Blevins oral history from Colorado College's collection of interviews with women
+        from the Western Slope, a simple RDF metadata graph of this audio object is presented at the right.
+<a href="https://digitalcc.coloradocollege.edu/islandora/object/coccc:2478">https://digitalcc.coloradocollege.edu/islandora/object/coccc:2478</a>
+        at this <strong>IRI</strong> (International Resource Identifier). IRIs identifies a resource with URLs 
+being the most common form of an IRI.
+       </div>
+     </article>
+   </section>
+   <section class="col-md-8">
+ <h3>RDF Graph in Turtle Format</h3>
 <pre>
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+@prefix xml: &lt;http://www.w3.org/XML/1998/namespace&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-<https://digitalcc.coloradocollege.edu/islandora/object/coccc%3A2478> a schema:AudioObject ;
+&lt;https://digitalcc.coloradocollege.edu/islandora/object/coccc:2478&gt; a schema:AudioObject ;
     schema:creator [ a schema:Person ;
             schema:givenName "Freddie" ;
             schema:name "Freddie White Blevins" ] ;
